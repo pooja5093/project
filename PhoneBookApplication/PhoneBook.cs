@@ -19,15 +19,15 @@ namespace PhoneBookApplication
             contact.phoneNumber=Console.ReadLine();
             Console.WriteLine("Enter emailId : ");
             contact.emailId=Console.ReadLine();
-            Contacts.Add(contact);
+            Contact.Add(contact);
             Console.WriteLine("Details added successfully ");
             Main();
         }
         public static void DeleteContact()
         {
             Console.Write("Enter phone number you want to delete:");
-            int phonenumber=Console.ReadLine();
-            Contacts.RemoveAll(mobileNumber => mobileNumber.phoneNumber == phonenumber);
+            int phonenumber=int.Parse(Console.ReadLine());
+            Contact.RemoveAll(mobileNumber => mobileNumber.phoneNumber == phonenumber);
             Console.Write("Contact deleted successfully");
             Main();
         } 

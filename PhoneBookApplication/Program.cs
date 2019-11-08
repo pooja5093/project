@@ -29,7 +29,7 @@ namespace PhoneBookApplication
              else
              {
                  Console.WriteLine("You have entered a wrong option.Please try again with different option.");
-                Main();
+                 main();
              }  
         }
     }
